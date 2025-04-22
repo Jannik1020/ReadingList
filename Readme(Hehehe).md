@@ -1,6 +1,7 @@
 GUI Architectures:
 General:
 - https://martinfowler.com/eaaDev/uiArchs.html
+  
 QT
 - https://doc.qt.io/qt-6/model-view-programming.html
 - https://doc.qt.io/qt-6/modelview.html
