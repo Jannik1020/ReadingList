@@ -1,0 +1,24 @@
+Common mistakes in game UI architecture
+Viktor Zatorskyi
+Viktor Zatorskyi
+3 min read
+·
+May 10, 2022
+
+Almost every project I was working on had a convoluted UI system design. Most platforms like iOS or Android give a decent framework to start with. This puts developers into boundaries and gives guidelines. Not so much so in game dev, with great flexibility come nightmare design decisions.
+
+Part of the problem is that UI programming is hard. There is no easy analogy in the real world to understand how UI works and then copy logic into software (as we do with physics engines or graphics programming). I was always intimidated to make changes to UI code. Eventually, I decided to understand what are the problems with making UI code robust, easy to read and maintain. For the past year I was working on an internal UI library and doing some UI programming for an upcoming project, so here are my findings.
+
+    The mishmash of different UI patterns. Often I see when different approaches are combined in one project. MVC+MVVM+MVP and so on. Those are not complimentary things, they suppose to replace each other. Sometimes there is no pattern at all. Solution: Pick one and use it consistently across the project.
+    
+    Misunderstanding of how the selected pattern works. It’s crucial to clearly get what are the responsibilities of each component of the pattern. What View, ViewModel, Model, Controller, Presenter, Widget and so on does. The funny thing is that many resources online state different things about the same components. Solution: it’s important to have a unified vision for the company about a specific pattern. It’s alright if it doesn’t completely much all the external sources, but the closer it is to the common knowledge, the easier it will be to onboard new devs.
+    
+    Leakage of game logic into views. There is a big temptation to modify a game state right where the button clicks are handled, but the modification of the game state from views is a slippery slope. It ruins the separation of concerns. And in case something is wrong with the game state you will have a smaller amount of places to search for a bug. Solution: communication with game and game logic calls should be transmitted by events/messages only. Based on the events game logic should alter the game state.
+    
+    Leakage of view logic into the game. Similar to the previous point, CharacterManager shouldn’t modify the internal UI state of HealthBar. Solution: control of the UI elements should be done by View. Information to View should be transferred through ViewModel or events.
+    
+    Lack of proper WindowManager. It’s a bad idea to handle window creation or store references to UI prefabs inside game logic/Views. Solution: invest time in a dedicated window manager that can handle window conflicts, stacking, layering, keep references to prefabs, and orchestrate everything related to UI.
+    
+    Bonus: Usage of Rx(Reactive Extensions) in game logic. Rx is an invaluable tool in UI programming, but please keep it in the UI domain. Solution: as a rule of thumb, all Subscribes to Rx data structures should happen inside View. If you start to modify the game state by subscribing to Rx events, soon your game logic will be hard to untangle.
+
+Games are complex projects and the mobile game codebase is often 50% to 80% dedicated to UI. Many developers try to take a shortcut in UI code and move quickly to gameplay programming. But trust me, by investing time in a proper UI architecture you will have more happiness in a long run.
