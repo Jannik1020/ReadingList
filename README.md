@@ -12,3 +12,7 @@ QT
 
 Audio Processing
 - https://www.dspguide.com/pdfbook.htm
+
+Graphics
+
+- https://haqr.eu/tinyrenderer/bresenham/
