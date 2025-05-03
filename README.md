@@ -6,6 +6,9 @@ GameDev:
 https://gameprogrammingpatterns.com/contents.html
 
 QT
+
+- https://doc.qt.io/qt-5/qtwidgets-index.html#getting-started
+
 - https://doc.qt.io/qt-6/model-view-programming.html
 - https://doc.qt.io/qt-6/modelview.html
 - https://vc.w-hs.de/teaching/hci-202021/030-model-view/010-the-qt-way/hci-030-model-view-010-the-qt-way-handout.pdf
