@@ -5,6 +5,11 @@ General:
 GameDev:
 https://gameprogrammingpatterns.com/contents.html
 
+Interpreters:
+
+https://craftinginterpreters.com/contents.html
+
+
 QT
 
 - https://doc.qt.io/qt-5/qtwidgets-index.html#getting-started
