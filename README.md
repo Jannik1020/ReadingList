@@ -24,3 +24,7 @@ Audio Processing
 Graphics
 
 - https://haqr.eu/tinyrenderer/bresenham/
+
+Automatentheorie
+
+- https://www.uni-ulm.de/fileadmin/website_uni_ulm/iui.inst.040/Formale_Methoden_der_Informatik/Vorlesungsskripte/FMdI-06--2010-01-10--FormaleSprachen_Vorlesung.pdf
