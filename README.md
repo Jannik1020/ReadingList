@@ -28,3 +28,5 @@ Graphics
 Automatentheorie
 
 - https://www.uni-ulm.de/fileadmin/website_uni_ulm/iui.inst.040/Formale_Methoden_der_Informatik/Vorlesungsskripte/FMdI-06--2010-01-10--FormaleSprachen_Vorlesung.pdf
+- https://www.youtube.com/watch?v=wgjm67Bt8zA&list=PL05umP7R6ij12ee_UxP9xRg8_hNZ1Vv9i
+- 
