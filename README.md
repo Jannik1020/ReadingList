@@ -31,4 +31,8 @@ Automatentheorie
 - https://www.youtube.com/watch?v=wgjm67Bt8zA&list=PL05umP7R6ij12ee_UxP9xRg8_hNZ1Vv9i
 - (interaktiv) https://flaci.com/home/
 
-- 
+
+
+Java
+
+- https://www.hsbi.de/elearning/data/FH-Bielefeld/lm_data/lm_1359639/modern-java/lambdas.html
