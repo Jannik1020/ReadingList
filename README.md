@@ -36,3 +36,5 @@ Automatentheorie
 Java
 
 - https://www.hsbi.de/elearning/data/FH-Bielefeld/lm_data/lm_1359639/modern-java/lambdas.html
+- https://roadmap.sh/java
+- 
